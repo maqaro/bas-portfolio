@@ -139,7 +139,7 @@
 .work--lockup .slider--next,
 .work--lockup .slider--prev {
     position: absolute;
-    top: 160px;
+    top: 200px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
