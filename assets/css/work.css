@@ -71,12 +71,6 @@
     margin: 0 auto;
 }
 
-/* .work--lockup .button--section{
-    display: none;
-    max-width: 250px;
-    margin: 0 auto;
-} */
-
 .work--lockup .slider--item-image {
     width: 150px;
     height: 150px;
@@ -127,9 +121,7 @@
     display: block;
 }
 
-/* .work--lockup .slider--item-center .button--section {
-    display: block;
-} */
+
 
 .work--lockup .slider--item-center .slider--item-image {
     width: 300px;
