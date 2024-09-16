@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="assets/css/work.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/contact.css">
-  <link rel="stylesheet" href="assets/css/hire.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
 </head>
 <body>
 <div class="perspective effect-rotate-left">
@@ -232,8 +232,64 @@
           </li>
           <li class="l-section section">
             <div class="skills">
+              <h2>My Skills</h2>
+              <div class="skills--options">
+                  <a class="frontend-link" onclick="showFrontendModal()">
+                      <h3>Frontend</h3>
+                  </a>
+                  <a class="backend-link" onclick="showBackendModal()">
+                      <h3>Backend</h3>
+                  </a>
+                  <a class="tools-link" onclick="showToolsModal()">
+                      <h3>Tools</h3>
+                  </a>
+              </div>
+              <div class="modal--wrapper">
+                <p class="intructions">Click on a box to find out more</p>
+                <div class="modal frontend--modal">
+                  <div class="modal-content">
+                    <p>Frontend Modal Content</p>
+                  </div>
+                </div>
+                <div class="modal backend--modal">
+                    <div class="modal-content">
+                      <p>Backend Modal Content</p>
+                    </div>
+                </div>
+                <div class="modal tools--modal">
+                    <div class="modal-content">
+                      <p>Tools Modal Content</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              const frontendModal = document.querySelector('.frontend--modal');
+              const backendModal = document.querySelector('.backend--modal');
+              const toolsModal = document.querySelector('.tools--modal');
+              const instructions = document.querySelector('.intructions');
 
-            </div>            
+              function showFrontendModal() {
+                  instructions.style.display = 'none';
+                  frontendModal.style.display = 'block';
+                  backendModal.style.display = 'none';
+                  toolsModal.style.display = 'none';
+              }
+
+              function showBackendModal() {
+                  instructions.style.display = 'none';
+                  backendModal.style.display = 'block';
+                  frontendModal.style.display = 'none';
+                  toolsModal.style.display = 'none';
+              }
+
+              function showToolsModal() {
+                instructions.style.display = 'none';
+                  toolsModal.style.display = 'block';
+                  frontendModal.style.display = 'none';
+                  backendModal.style.display = 'none';
+              }
+            </script>
           </li>
           <li class="l-section section">
             <div class="contact">
