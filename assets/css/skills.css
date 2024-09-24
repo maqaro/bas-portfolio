@@ -38,7 +38,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    max-width: 600px;
+    max-width: 650px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -96,13 +96,12 @@
     align-items: center;
 }
 
-.modal {
+.skills .modal {
     display: none; 
     left: 50%;
     top: 50%;
-    
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 610px;
     background-color: #0c0c0c;
     border: 1px solid #888;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -110,21 +109,56 @@
     border-radius: 8px;
 }
 
-.modal-content {
-    padding: 20px;
-    color: black;
+.modal--content {
+    color: rgb(255, 255, 255);
 }
 
-.close {
-    color: #aaa;
-    float: right;
+.education--modal{
+    display: flex;
+    flex-direction: column;
+}
+
+.education--box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+}
+
+.education--box:last-child{
+    text-align: right;
+    margin-left: 54%;
+}
+
+.education--box i{
+    font-size: 50px;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.education--modal h3{
     font-size: 28px;
-    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.education--box h3{
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.education--box h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.education--box p{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
 }
