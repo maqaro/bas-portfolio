@@ -532,7 +532,7 @@ body {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0f33ff;
+    background-color: #3d00cd;
     border: none;
     opacity: 0;
     visibility: hidden;
@@ -629,7 +629,7 @@ body {
 }
 
 .side-nav li.is-active {
-    color: #0f33ff;
+    color: #3d00cd;
     -webkit-transition: color .4s ease-in-out;
     transition: color .4s ease-in-out;
 }
